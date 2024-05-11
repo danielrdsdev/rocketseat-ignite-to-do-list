@@ -32,7 +32,7 @@ export const TaskForm = () => {
 
 	return (
 		<Form onSubmit={handleSubmit(onSubmit)}>
-			<Input {...register("name")} placeholder="Selecione uma tarefa" />
+			<Input {...register("name")} placeholder="Adicione uma tarefa" />
 			<Button type="submit">
 				Criar
 				<Plus />

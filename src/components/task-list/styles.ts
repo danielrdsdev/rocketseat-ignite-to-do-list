@@ -112,3 +112,22 @@ export const TrashButton = styled.button`
     color: ${(props) => props.theme.colors.danger};
   }
 `;
+
+export const NoTaskFoundContainer = styled.div`
+  height: 244px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+
+  color: ${(props) => props.theme.colors.gray["300"]};;
+`;
+
+export const NoTaskFoundTextContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+`;

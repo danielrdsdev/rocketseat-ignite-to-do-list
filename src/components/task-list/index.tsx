@@ -1,6 +1,9 @@
 import { useContext } from "react";
 import { TaskContext } from "../../contexts/task";
+import { Clipboard } from "../icons/clipboard";
 import {
+	NoTaskFoundContainer,
+	NoTaskFoundTextContainer,
 	TaskItemContainer,
 	TaskLabel,
 	TaskLabelContainer,
@@ -33,6 +36,16 @@ export const TaskList = () => {
 					<TaskItem key={task.name} task={task} />
 				))}
 			</TaskItemContainer>
+
+			{tasks.length === 0 && (
+				<NoTaskFoundContainer>
+					<Clipboard />
+					<NoTaskFoundTextContainer>
+						<h3>Você ainda não tem tarefas cadastradas</h3>
+						<p>Crie tarefas e organize seus itens a fazer</p>
+					</NoTaskFoundTextContainer>
+				</NoTaskFoundContainer>
+			)}
 		</TaskListContainer>
 	);
 };

@@ -33,10 +33,14 @@ export const TaskProvider = ({ children }: { children: ReactNode }) => {
 		}
 
 		setTasks((prev) => [...prev, values]);
+
+		toast.success("Tarefa adicionada!");
 	};
 
 	const deleteTask = (id: string) => {
 		setTasks((prev) => prev.filter((task) => task.name !== id));
+
+		toast.success("Tarefa removida com sucesso!");
 	};
 
 	const completeTask = (id: string) => {
@@ -45,6 +49,8 @@ export const TaskProvider = ({ children }: { children: ReactNode }) => {
 				task.name === id ? { ...task, isCompleted: true } : task,
 			),
 		);
+
+		toast.success("Parabéns!! Voce concluiu uma tarefa.");
 	};
 
 	return (

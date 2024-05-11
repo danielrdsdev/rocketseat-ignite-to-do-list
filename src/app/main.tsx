@@ -17,6 +17,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 				<App />
 
 				<Toaster
+					position="top-center"
 					toastOptions={{
 						style: {
 							padding: 16,

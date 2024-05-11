@@ -35,7 +35,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/seuusername/todo-list.git
+$ git clone https://github.com/danielrdsdev/rocketseat-ignite-to-do-list.git
 
 # Acesse a pasta do projeto no terminal/cmd
 $ cd todo-list
